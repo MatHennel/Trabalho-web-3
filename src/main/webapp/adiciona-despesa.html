@@ -92,7 +92,7 @@ select {
 
 <h2>Cadastro de Despesa</h2>
 
-<form action="adicionaDespesa" method="post">
+<form action="controladora" method="post">
     <label for="descricao">Descrição:</label>
     <input type="text" id="descricao" name="descricao" required><br><br>
 
@@ -111,7 +111,7 @@ select {
         <option value="MORADIA">Moradia</option>
         <option value="OUTROS">Outros</option>
     </select><br><br>
-
+    <input type="hidden" name="acao" value="AdicionaDespesa">
     <input type="submit" value="Cadastrar">
     <a href="index.html" class="back-button">Voltar para a Página Inicial</a>
 
